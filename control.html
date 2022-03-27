@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <title>| Autonomous AKITA Control  |</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<script src="https://cdn.tailwindcss.com"></script>
-	<link rel="stylesheet" href="css/style.css">
+  <title>| Autonomous AKITA Control  |  Control  |</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="/js/script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800" style="height: 6vh;">
+
+  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800" style="height: 5vh;">
    <div class="container flex flex-wrap justify-between items-center mx-auto">
-  <div></div>
+    <div></div>
     <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
       <span class="sr-only">Open main menu</span>
       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -18,136 +23,232 @@
     <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
       <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
         <li>
-          <a href="index2.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+          <a href="index.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
         </li>
         <li>
-          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          <a href="about.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
         </li>
         <li>
           <a href="control.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Control</a>
         </li>
         <li>
-          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          <a href="contact.html" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-    <div class="lg:text-center">
-      <p class="font-cookie text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-2xl">Control Panel for AKITA Weed Clean</p>
+
+<div class="grid grid-cols-3 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-2xl">
+  <div class="self-center mt-5">
+    <div class="lg:text-center ">
+      <div class="animate-bounce">
+        ****
+      </div>
     </div>
-<div class="grid grid-cols-3 gap-4 border-2 border-neutral-900" style="height: 90vh;">
-    <div class="bg-yellow-100 my-4 ml-4  border border-neutral-900">
-    <div class="bg-red-100 my-4 ml-4 mr-4 border border-neutral-900" style="height: 20vh;">ada</div>
-      <div class="grid grid-cols-3 gap-10 ml-4 mr-4 justify-evenly"> 
-          <div class="bg-green-700 w-50 h-100"><img class="w-32" src="images/logo.png"></div> 
-          <div class="w-50 h-50">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                Button
-            </button>
-        </div> 
-          <div class="w-50 h-50">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                Button
-            </button>
-        </div>
-          <div class="w-50 h-50">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                Button
-            </button>
-        </div>
-          <div class="w-50 h-50">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                Button
-            </button>
-        </div>
-          <div class="w-50 h-50">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                Button
-            </button>
+  </div>
+  <!-- ... -->
+  <div class="self-center">    
+    <div class="lg:text-center">
+      Control Panel for AKITA Weed Clean
+    </div>
+  </div>
+
+  <div class="self-center mt-5">    
+    <div class="lg:text-center">
+      <div class="animate-bounce">
+        ****
+      </div>
+    </div>
+  </div>
+</div>
+<div class="grid grid-cols-3 gap-4 border-2 border-neutral-900">
+  <div class="bg-yellow-100 my-4 ml-4 border border-neutral-900">
+    <div class="bg-white my-4 ml-4 mr-4 border border-neutral-900">
+      <div class="block mx-auto max-w-sm">
+        <div class="mt-4 mb-4">
+          <div>
+            <label class="inline-flex items-center">
+              <input type="radio" class="form-radio h-6 w-6" name="radio-sizes" value="1" checked>
+              <span class="ml-4 text-lg">Manuel Sürüş</span>
+            </label>
+          </div>
+          <div class="mt-1">
+            <label class="inline-flex items-center">
+              <input type="radio" class="form-radio h-6 w-6" name="radio-sizes" value="2">
+              <span class="ml-4 text-lg">Yarı Otonom Sürüş</span>
+            </label>
+          </div>
+          <div class="mt-1">
+            <label class="inline-flex items-center">
+              <input type="radio" class="form-radio h-6 w-6" name="radio-sizes" value="3">
+              <span class="ml-4 text-lg">Otonom Sürüş</span>
+            </label>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="col-span-2 bg-yellow-100 border border-x-neutral-900">b</div>
+    <div class="col-md-12" style="text-align: center;"> 
+      <div>
+        <button class="text-red font-bold px-4" name="botton-up" onclick="btn_click(name)">
+          <i class="fa-4x fa-solid fa-circle-arrow-up px-1"></i>
+        </button>
+      </div>         
+      <div>
+        <button class="font-bold text-center">
+          <i class="fa-4x fa-solid fa-circle-arrow-left"></i>
+        </button>
+        <button class="text-red font-bold px-4 m-6" style="padding-bottom: 1rem;padding-top: 1rem;">
+          <i class="fa-4x fa-solid fa-power-off bg-green-900 border p-2 rounded-full"></i>
+        </button>
+        <button class="text-red font-bold">
+         <i class="fa-4x fa-solid fa-circle-arrow-right"></i>
+       </button>
+     </div>           
+     <div> 
+      <button class="text-red font-bold px-4">
+        <i class="fa-4x fa-solid fa-circle-arrow-down px-1"></i>
+      </button> 
+    </div>      
+  </div>
+
+  
+
+  <div class="flex justify-center mt-10">
+    <button class="border-b-8 border-x-8 w-48 h-12 rounded-lg ml-4 bg-green-900" title="Aracı hareket ettirin.">
+      <span class="bg-green-600 text-white block w-full h-full py-2 -translate-y-2 active:translate-y-0">Start</span>
+    </button>
+
+    <button class=" border-b-8 border-x-8 w-48 h-12 ml-4 rounded-lg bg-red-900" title="Aracı durdurun.">
+      <span class="bg-red-600 text-white block w-full h-full py-2 -translate-y-2 active:translate-y-0">Stop</span>
+    </button>
+
+  </div>
+  <div class="bg-white my-4 ml-4 mr-4 border border-neutral-900">
+    <div class="block mx-auto max-w-sm">
+      <div class="mt-4 mb-6">
+        <div>
+          <label class="inline-flex items-center">
+            <span class="ml-4 text-lg">İlaçlanan Yabani Ot: 12</span>
+          </label>
+        </div>
+        <div class="mt-1">
+          <label class="inline-flex items-center">
+            <span class="ml-4 text-lg">Aracın Hızı: 1 m/sn</span>
+          </label>
+        </div>
+        <div class="mt-1">
+          <label class="inline-flex items-center">
+            <span class="ml-4 text-lg">Taranan Alan: 34 mxm</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="ml-2 mr-2">
+    <font font color="red" face="Verdana, Geneva, sans-serif" size="4" face="Verdana">
+      <marquee direction=left scrollamount="2">Tanrı Türkü Korusun...</marquee>
+    </font>
+  </p>
 </div>
 
-<footer class="text-center lg:text-left bg-gray-100 text-gray-600">
-    <div class="mx-6 py-5 text-center md:text-left">
+
+<div class="col-span-2 bg-yellow-100 border border-x-neutral-900">
+  <div class="" style="  position: relative; text-align: center; color: white;">
+    <div class="p-4 bg-white">
+      <img src="images/map.png"
+      alt="Snow"
+      style ="width: 100%; height: 750px">
+    </div>
+    <div class="centeredhakan flex items-center justify-center p-4">
+      <img src="images/konum1.png"
+      alt="Snow"
+      style ="width: 75px; height: 75px">
+    </div>  
+  </div>  
+</div>
+
+</div>
+
+<footer class="text-center lg:text-left bg-gray-100 text-gray-600 mt-4 ">
+  <div class="mx-6 py-5 text-center md:text-left">
     <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4">
       <div class="">
         <h6 class="
-            uppercase
-            mb-4
-            flex
-            items-center
-            justify-center
-            md:justify-start
-          ">
-    <img class="w-32" src="images/logo.png">
-        </h6>
-        <p class="footer-company-name">© 2022 Mavi Alp Bil. Ltd.</p>
-      </div>
+        uppercase
+        mb-4
+        flex
+        items-center
+        justify-center
+        md:justify-start
+        ">
+        <img class="w-32" src="images/logo.png">
+      </h6>
+      <p class="footer-company-name">© 2022 Mavi Alp Bil. Ltd.</p>
+    </div>
 
-      <div class="">
-        <h6 class="font-semibold mb-4 flex justify-center md:justify-start">
-          İletişim
-        </h6>
-        <p class="flex items-center justify-center md:justify-start mb-4">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
-            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-            <path fill="currentColor"
-              d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
-            </path>
-          </svg>
-          Mavi Alp Bilgi Teknolojileri, Trabzon, Turkey
-        </p>
-        <p class="flex items-center justify-center md:justify-start mb-4">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
-            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512">
-            <path fill="currentColor"
-              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
-            </path>
-          </svg>
-          <a href="mailto:akitamavialp@gmail.com">akitamavialp@gmail.com</a>
-        </p>
-        <p class="flex items-center justify-center md:justify-start mb-4">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
-            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512">
-            <path fill="currentColor"
-              d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
-            </path>
-          </svg>
-          +90 546 274 XX XX
-        </p>
-      </div>
-            <div class="">
-        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-        </h6>
-      </div>
-            <div class="">
-        <h6 class="font-semibold mb-4 flex justify-center md:justify-start">
-         Hakkımızda
-        </h6>
-        <p class="flex items-center justify-center md:justify-start mb-4">
-    We offer innovations in Technology, Design and Humanities.
-        </p>
-      </div>
-</footer>
-  <div class="flex justify-center items-center lg:justify-between p-6 border-t bg-gray-100 border-gray-300">
-    <div class="mr-12 hidden lg:block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <div class="flex justify-center">
-      <a href="#!" class="mr-6 text-gray-600">
-        <i class="fa-brands fa-twitter"></i>
+    <div class="">
+      <h6 class="font-semibold mb-4 flex justify-center md:justify-start">
+        İletişim
+      </h6>
+      <p class="flex items-center justify-center md:justify-start mb-4">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
+        class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <path fill="currentColor"
+        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
+      </path>
+    </svg>
+    Mavi Alp Bilgi Teknolojileri, Trabzon, Turkey
+  </p>
+  <p class="flex items-center justify-center md:justify-start mb-4">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
+    class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512">
+    <path fill="currentColor"
+    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+  </path>
+</svg>
+<a href="mailto:akitamavialp@gmail.com">akitamavialp@gmail.com</a>
+</p>
+<p class="flex items-center justify-center md:justify-start mb-4">
+  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
+  class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 512 512">
+  <path fill="currentColor"
+  d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+</path>
+</svg>
++90 462 325 86 90 
+</p>
+</div>
+<div class="">
+  <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+  </h6>
+</div>
+<div class="">
+  <h6 class="font-semibold mb-4 flex justify-center md:justify-start">
+   Hakkımızda
+ </h6>
+ <p class="flex items-center justify-center md:justify-start mb-4">
+  Teknoloji, Tasarım ve Beşeri Bilimlerde yenilikler sunuyoruz.
+</p>
+<br>
+
+<div class="container">
+  <div class="flex justify-left">
+    <a href="#!" class="text-gray-800">
+      <a href="https://www.linkedin.com/company/mavialp" class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800">
+        <i class="fa-brands fa-linkedin-in"></i>
       </a>
-      <a href="#!" class="mr-6 text-gray-600">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-    </div>
+    </a>
   </div>
+</div>
+
+</div>
+</div>
+</div>
+</footer>
 </body>
+<script type="text/javascript" src="js/script.js"></script>
 </html>
